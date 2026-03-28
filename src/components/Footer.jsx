@@ -508,6 +508,12 @@ const Footer = () => {
                             Designed &amp; Developed By
                         </p>
                         <p className="ft-brand-text tracking-wide">
+                            <a
+                              href="https://www.logicmindsbyparii.com"   // ← REPLACE THIS
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="hover:underline focus:underline"
+                            >
                             Logic Minds by Parii
                         </p>
                     </div>

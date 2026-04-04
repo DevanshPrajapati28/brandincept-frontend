@@ -155,12 +155,6 @@ const ServiceCard = ({ icon: Icon, title, description, badge, highlights, delay,
             {/* Badge */}
             {badge && <div className="card-badge">{badge}</div>}
 
-            {/* Arrow CTA */}
-            <div className="card-arrow">
-                {/* <ArrowUpRight size={18} /> */}
-                {/* <span>Learn More</span> */}
-            </div>
-
             {/* Corner dot */}
             <div className="card-corner-dot" />
         </div>

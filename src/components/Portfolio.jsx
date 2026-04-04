@@ -7,48 +7,14 @@ const Portfolio = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [visibleCount, setVisibleCount] = useState(4); // Show first 4 initially
 
-    useEffect(() => {
+        useEffect(() => {
         const fetchProjects = async () => {
             try {
                 const response = await fetch(`${API_URL}/api/projects`);
                 if (response.ok) {
                     const result = await response.json();
                     if (result.success) {
-                        // If the API returns only the 4 projects you have,
-                        // you can append additional projects here manually:
-                        const additionalProjects = [
-                            {
-                                brand: "Funky Monkeys",
-                                description: "Successfully established premium kids play zone at Ahmedabad One Mall, Vastrapur. Indoor playground and birthday party venue serving children up to 14 years.",
-                                tags: ["Ahmedabad", "Kids Entertainment", "Play Zone", "Mall Location"],
-                                image: "/assests/funkymonkeysproject.png",
-                                highlight: "Prime mall location at Ahmedabad One"
-                            },
-                            {
-                                brand: "Miniklub",
-                                description: "1st high-street store in Surat at Vesu Road. Baby and kids lifestyle brand offering apparel, footwear, toys, and essentials for newborns to 8-year-olds.",
-                                tags: ["Surat", "Baby & Kids Lifestyle", "Retail", "High-Street"],
-                                image: "/assests/miniklubproject.png",
-                                highlight: "1st High-Street Store in Surat"
-                            },
-                            {
-                                brand: "Homelane",
-                                description: "Successfully leased and transacted. End-to-end home interior and design solutions.",
-                                tags: ["Leasing", "Home Interiors"],
-                                image: "/assests/homelaneproject.png",
-                                highlight: "Successfully Leased & Transacted"
-                            },
-                            {
-                                brand: "Purple9",
-                                description: "New store opening in Ahmedabad. Premium retail expansion in Gujarat.",
-                                tags: ["Ahmedabad", "New Store Opening", "Retail"],
-                                image: "/assests/purple9project.png",
-                                highlight: "New Store Opening in Ahmedabad"
-                            }
-                            // Add more as needed
-                        ];
-                        // Merge API data with additional projects
-                        setProjects([...result.data, ...additionalProjects]);
+                        setProjects(result.data);
                     }
                 }
             } catch (error) {
@@ -59,7 +25,7 @@ const Portfolio = () => {
         };
 
         fetchProjects();
-    }, []);
+    }, [])
 
     const handleSeeMore = () => {
         // Show all projects when button clicked
@@ -77,7 +43,7 @@ const Portfolio = () => {
                             Explore our portfolio of successful brand placements and high-value corporate leasing executions across key strategic locations.
                         </p>
                     </div>
-                    <a href="#contact" className="hidden md:flex items-center space-x-2 text-[#017dc5] font-semibold hover:text-blue-600 transition-colors mt-6 md:mt-0 pb-2 border-b-2 border-transparent hover:border-blue-600">
+                    {/* <a href="#contact" className="hidden md:flex items-center space-x-2 text-[#017dc5] font-semibold hover:text-blue-600 transition-colors mt-6 md:mt-0 pb-2 border-b-2 border-transparent hover:border-blue-600"> */}
                         <span>Start Your Project</span>
                         <ArrowUpRight size={20} />
                     </a>

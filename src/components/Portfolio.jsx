@@ -7,7 +7,7 @@ const Portfolio = () => {
     const [isLoading, setIsLoading] = useState(true);
     const [visibleCount, setVisibleCount] = useState(4); // Show first 4 initially
 
-        useEffect(() => {
+    useEffect(() => {
         const fetchProjects = async () => {
             try {
                 const response = await fetch(`${API_URL}/api/projects`);
@@ -25,7 +25,7 @@ const Portfolio = () => {
         };
 
         fetchProjects();
-    }, [])
+    }, []);
 
     const handleSeeMore = () => {
         // Show all projects when button clicked
@@ -43,7 +43,7 @@ const Portfolio = () => {
                             Explore our portfolio of successful brand placements and high-value corporate leasing executions across key strategic locations.
                         </p>
                     </div>
-                    {/* <a href="#contact" className="hidden md:flex items-center space-x-2 text-[#017dc5] font-semibold hover:text-blue-600 transition-colors mt-6 md:mt-0 pb-2 border-b-2 border-transparent hover:border-blue-600"> */}
+                    <a href="#contact" className="hidden md:flex items-center space-x-2 text-[#017dc5] font-semibold hover:text-blue-600 transition-colors mt-6 md:mt-0 pb-2 border-b-2 border-transparent hover:border-blue-600">
                         <span>Start Your Project</span>
                         <ArrowUpRight size={20} />
                     </a>
@@ -77,7 +77,7 @@ const Portfolio = () => {
                                     <div className="p-8">
                                         <h4 className="text-2xl font-bold text-[#017dc5] mb-4 flex items-center justify-between">
                                             <span>{project.brand}</span>
-                                            <ArrowUpRight className="text-gray-300 group-hover:text-[#017dc5] transition-colors" size={24} />
+                                            <span className="text-black text-lg font-medium">{project.tags[0]}</span>
                                         </h4>
 
                                         <p className="text-gray-600 font-light mb-8 line-clamp-2 h-12">

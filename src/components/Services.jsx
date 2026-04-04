@@ -238,8 +238,8 @@ const ServiceCard = ({ icon: Icon, title, description, badge, highlights, delay,
 
             {/* Arrow CTA */}
             <div className="card-arrow">
-                <ArrowUpRight size={18} />
-                <span>Learn More</span>
+                {/* <ArrowUpRight size={18} /> */}
+                {/* <span>Learn More</span> */}
             </div>
 
             {/* Corner dot */}

@@ -368,6 +368,26 @@ const Footer = () => {
                     letter-spacing: 0.03em;
                 }
 
+               /* ─── SOCIAL ICONS ─── */
+                .ft-social-link {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    background: rgba(1, 125, 197, 0.05);
+                    color: #017dc5;
+                    transition: all 0.3s ease;
+                    border: 1px solid rgba(1, 125, 197, 0.1);
+                }
+                .ft-social-link:hover {
+                    background: #017dc5;
+                    color: white;
+                    transform: translateY(-2px);
+                    box-shadow: 0 4px 12px rgba(1, 125, 197, 0.2);
+                }
+
                 /* ─── NOISE OVERLAY ─── */
                 .ft-noise {
                     position: absolute; inset: 0; z-index: 1; pointer-events: none; opacity: 0.018;
@@ -428,12 +448,20 @@ const Footer = () => {
                                 <span style={{
                                     position: 'absolute',
                                     top: 0,
-                                    right: -8,
+                                    right: -14,
                                     fontSize: '15px',
                                     fontWeight: 700,
                                     color: 'black',
                                     lineHeight: 1,
                                 }}>®</span>
+                            </div>
+                            <div className="flex items-center gap-4 mt-4">
+                                <a href="https://www.instagram.com/brand.incept/" target="_blank" rel="noopener noreferrer" className="ft-social-link" title="Follow us on Instagram">
+                                    <Instagram size={18} />
+                                </a>
+                                <a href="https://www.facebook.com/brandincept" target="_blank" rel="noopener noreferrer" className="ft-social-link" title="Follow us on Facebook">
+                                    <Facebook size={18} />
+                                </a>
                             </div>
                             <p className="text-[#017dc5] text-sm font-light mt-4">
                                 Corporate Leasing &amp; Franchise Advisory

@@ -261,7 +261,7 @@ const Header = () => {
                                 <span style={{
                                     position: 'absolute',
                                     top: 0,
-                                    right: -8,
+                                    right: -14,
                                     fontSize: '15px',
                                     fontWeight: 700,
                                     color: 'black',

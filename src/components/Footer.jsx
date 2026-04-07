@@ -377,7 +377,7 @@ const Footer = () => {
                                 }}>®</span>
                             </div>
                             <div className="flex items-center gap-4 mt-4">
-                                <a href="https://www.instagram.com/brand.incept/" target="_blank" rel="noopener noreferrer" className="ft-social-link" title="Follow us on Instagram">
+                                <a href="https://www.instagram.com/brand.incept" target="_blank" rel="noopener noreferrer" className="ft-social-link" title="Follow us on Instagram">
                                     <Instagram size={18} />
                                 </a>
                                 <a href="https://www.facebook.com/brandincept" target="_blank" rel="noopener noreferrer" className="ft-social-link" title="Follow us on Facebook">

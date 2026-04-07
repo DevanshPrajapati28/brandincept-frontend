@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Instagram, Facebook } from 'lucide-react';
 
 /* ─────────────────────────────────────────────
    LIQUID MESH CANVAS

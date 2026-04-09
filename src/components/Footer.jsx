@@ -400,7 +400,7 @@ const Footer = () => {
                             <div className="space-y-3 text-black w-full">
                                 <div className="ft-contact-row">
                                     <span className={`ft-icon-pulse text-[#B21F24]`}>📍</span>
-                                    <span>157 Avadh arena VIP Road Vesu, Surat, India</span>
+                                    <span>203 Milestone Atlantis Vesu Cross Road, Surat - 395007, India</span>
                                 </div>
                                 <div className="ft-contact-row">
                                     <span className="ft-icon-pulse ft-icon-pulse-2 text-[#B21F24]">📞</span>

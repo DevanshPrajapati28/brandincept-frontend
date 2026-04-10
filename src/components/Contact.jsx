@@ -217,6 +217,7 @@ const Contact = () => {
                                     >
                                         <option value="franchise">Franchise Advisory</option>
                                         <option value="leasing">Corporate Leasing</option>
+                                        <option value="businessconsulting">Business Consulting</option>
                                         <option value="other">Other Inquiry</option>
                                     </select>
                                 </div>

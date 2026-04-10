@@ -386,7 +386,7 @@ const Footer = () => {
                                 </a>
                             </div>
                             <p className="text-[#017dc5] text-sm font-light mt-4">
-                                Corporate Leasing &amp; Franchise Advisory
+                                Corporate Leasing | Franchise Advisory | Business Consulting
                             </p>
                         </div> 
 

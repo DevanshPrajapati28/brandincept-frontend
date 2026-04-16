@@ -11,11 +11,11 @@ const BrandPartners = () => {
         { name: "Chinese Wok", src: "/assests/chinesewok.png", desc: "Food" },
         { name: "Funky Monkeys", src: "/assests/funkymonkeys-removebg.png", desc: "Entertainment" },
         { name: "Intune", src: "/assests/intune-removebg.png", desc: "Apparel" },
-        { name: "Changa Chai", src: "/assests/changachai-removebg.png", desc: "F&B" },
-        { name: "Coffee Culture", src: "/assests/coffeeculture-removebg.png", desc: "F&B" },
-        { name: "Mahesh Pavbhaji", src: "/assests/maheshpavbhaji-removebg.png", desc: "F&B" },
+        { name: "Changa Chai", src: "/assests/changachai-removebg.png", desc: "International Cafe" },
+        { name: "Coffee Culture", src: "/assests/coffeeculture-removebg.png", desc: "International Cafe" },
+        { name: "Mahesh Pavbhaji", src: "/assests/maheshpavbhaji-removebg.png", desc: "International Cafe" },
         { name: "Purple Spa", src: "/assests/purplespa-removebg.png", desc: "Wellness" },
-        { name: "McDonald's", src: "/assests/Macd-removebg.png", desc: "F&B" },
+        { name: "McDonald's", src: "/assests/Macd-removebg.png", desc: "International Cafe" },
         { name: "Connplex Cinema", src: "/assests/connplex-logo.png", desc: "Entertainment" }
     ]);
     const [isLoading, setIsLoading] = useState(true);

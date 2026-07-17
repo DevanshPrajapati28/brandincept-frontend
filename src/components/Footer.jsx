@@ -402,10 +402,19 @@ const Footer = () => {
                                     <span className={`ft-icon-pulse text-[#B21F24]`}>📍</span>
                                     <span>203 Milestone Atlantis Vesu Cross Road, Surat - 395007, India</span>
                                 </div>
-                                <div className="ft-contact-row">
+                                {/* <div className="ft-contact-row">
                                     <span className="ft-icon-pulse ft-icon-pulse-2 text-[#B21F24]">📞</span>
                                     <span>+91 76229 34444</span>
-                                </div>
+                                </div> */}
+                               <div className="ft-contact-row">
+                               <span className="ft-icon-pulse ft-icon-pulse-2 text-[#B21F24]">📞</span>
+                               <a
+                                   href="tel:+917622934444"
+                                   className="text-black hover:text-[#B21F24] transition-colors duration-200"
+                               >
+                                   +91 76229 34444
+                               </a>
+                               </div>
                                 <div className="ft-contact-row">
                                     <span className="ft-icon-pulse ft-icon-pulse-3 text-[#B21F24]">✉️</span>
                                     <a href="mailto:jigar@brandincept.com"

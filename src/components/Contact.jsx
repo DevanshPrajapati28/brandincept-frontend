@@ -133,7 +133,13 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h4 className="text-xs text-blue-200/80 mb-1 uppercase tracking-wider font-semibold">Call Direct</h4>
-                                        <p className="text-xl font-medium tracking-wide">+91 76229 34444</p>
+                                        {/* <p className="text-xl font-medium tracking-wide">+91 76229 34444</p> */}
+                                        <a
+                                          href="tel:+917622934444"
+                                          className="text-xl font-medium tracking-wide hover:text-blue-300 transition-colors"
+                                        >
+                                          +91 76229 34444
+                                        </a>
                                     </div>
                                 </div>
 
